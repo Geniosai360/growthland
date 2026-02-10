@@ -1,0 +1,1 @@
+import { Entity, Column, PrimaryGeneratedColumn, ManyToOne } from 'typeorm';\nimport { Region } from './region.entity';\n\n@Entity()\nexport class School {\n    @PrimaryGeneratedColumn()\n    id: number;\n    \n    @Column()\n    name: string;\n    \n    @Column()\n    address: string;\n    \n    @ManyToOne(() => Region, region => region.schools)\n    region: Region;\n}
