@@ -1,0 +1,10 @@
+{
+  "name": "growthland",
+  "private": true,
+  "workspaces": [
+    "frontend/*",
+    "backend/*"
+  ],
+  "devDependencies": {},
+  "dependencies": {}
+}
